@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @MapperScan("com.tukjax.cargo.tukjaxTheCoder.dao.*")
-public class TukjaxTheCoderApplication {
+public class CargoDemoApplicaiton {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TukjaxTheCoderApplication.class, args);
+		SpringApplication.run(CargoDemoApplicaiton.class, args);
 	}
 
 }
