@@ -1,6 +1,6 @@
 package com.tukjax.cargo.boot.facade;
 
-import com.tukjax.cargo.boot.dao.repo.BookRepo;
+import com.tukjax.cargo.boot.dao.BookRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

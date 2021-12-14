@@ -1,4 +1,4 @@
-package com.tukjax.cargo.boot.dao.repo;
+package com.tukjax.cargo.boot.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.tukjax.cargo.boot.dao.Book;
