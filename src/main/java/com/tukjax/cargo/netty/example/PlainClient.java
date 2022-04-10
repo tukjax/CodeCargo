@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 import java.util.Date;
-
 import static com.tukjax.cargo.netty.example.Constants.LOCALHOST;
 import static com.tukjax.cargo.netty.example.Constants.PUB_PORT;
 

@@ -25,11 +25,12 @@ public class NioServer {
         new Thread(() -> {
             try {
                 ServerSocketChannel listenerChannel = ServerSocketChannel.open();
+
                 listenerChannel.socket().bind(new InetSocketAddress(PUB_PORT));
                 listenerChannel.configureBlocking(false);
                 listenerChannel.register(serverSelector, SelectionKey.OP_ACCEPT);
                 while (true) {
-                    if (serverSelector.select(1) > 1) {
+                    if (serverSelector.select(1) > 0) {
                         Set<SelectionKey> set = serverSelector.selectedKeys();
                         Iterator<SelectionKey> keyIterator = set.iterator();
                         while (keyIterator.hasNext()) {
@@ -54,7 +55,7 @@ public class NioServer {
         new Thread(() -> {
             try {
                 while (true) {
-                    if (clientSelector.select(100) > 0) {
+                    if (clientSelector.select(1) > 0) {
                         Set<SelectionKey> set = clientSelector.selectedKeys();
                         Iterator<SelectionKey> keyIterator = set.iterator();
 
